@@ -1,6 +1,12 @@
 # Rock Paper Scissors Dapp
 [Rock Paper Scissors!!!](http://yarilabs.rps.algorand-testnet.surge.sh/)
 
+### Algorand wallet
+[AlgoConnect](https://wallet.myalgo.com)
+
+### Algorand Testnet faucet
+https://bank.testnet.algorand.network/
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -22,9 +28,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### Algorand wallet
-[AlgoConnect](https://wallet.myalgo.com)
-
-### Algorand Testnet faucet
-https://bank.testnet.algorand.network/
