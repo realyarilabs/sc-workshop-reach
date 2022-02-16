@@ -1,9 +1,9 @@
 ## Install Docker and Reach
 
 ### Windows
-All steps bellow are listed [here](https://docs.reach.sh/guide/windows/#guide-windows)
+All steps below are listed [here](https://docs.reach.sh/guide/windows/#guide-windows).
 
-Steps:
+Steps to install wsl and docker:
   * ``Windows logo key + R`` and type ``cmd``
   * Install wsl with ``wsl --install``
   * Check your version with ``wsl.exe -l -v`` (this should be the default one)
@@ -18,6 +18,8 @@ Start by installing Docker (except if you already did), here are some guides for
   * [Debian/Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
   * [Manjaro/Arch](https://wiki.archlinux.org/title/docker#Installation)
   * [Fedora](https://fedoramagazine.org/docker-and-fedora-35/)
+
+All steps below are listed [here](https://docs.reach.sh/tut/rps/#tut-1).
 
 Proceed by installing reach:
   * Download the executable with ``curl https://docs.reach.sh/reach -o reach ; chmod +x reach``
