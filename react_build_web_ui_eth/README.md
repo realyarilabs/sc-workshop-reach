@@ -35,6 +35,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - <https://faucet.rinkeby.io/>
 
 Steps after metamask setup:
+
     - Publish one tweet with account address "0x123...."
     - Switch network to rinkeby network
     - Copy tweet url and paste in the faucet to the ETH test tokens.
