@@ -3,7 +3,7 @@
 You can run this step with ``reach run``!
 
 ### Example output
-``
+```
 $ ./reach run
 Alice played Paper
 Bob played Rock
