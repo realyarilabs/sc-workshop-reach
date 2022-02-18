@@ -8,20 +8,13 @@ import {renderDOM, renderView} from './views/render';
 import './index.css';
 import * as backend from './build/index.main.mjs';
 import {loadStdlib} from '@reach-sh/stdlib';
-import MyAlgoConnect from '@reach-sh/stdlib/ALGO_MyAlgoConnect';
-const reach = loadStdlib(process.env);
+
+const reach = loadStdlib({ REACH_CONNECTOR_MODE: 'ETH' });
 
 const handToInt = {'ROCK': 0, 'PAPER': 1, 'SCISSORS': 2};
 const intToOutcome = ['Bob wins!', 'Draw!', 'Alice wins!'];
 const {standardUnit} = reach;
 const defaults = {defaultFundAmt: '10', defaultWager: '3', standardUnit};
-
-reach.setWalletFallback(reach.walletFallback({ providerEnv: 'TestNet', MyAlgoConnect }));
-
-// import WalletConnect from '@reach-sh/stdlib/ALGO_WalletConnect';
-// reach.setWalletFallback(reach.walletFallback({ providerEnv: 'TestNet', WalletConnect }));
-
-// reach.setWalletFallback(reach.walletFallback({}));
 
 export default class App extends React.Component {
   constructor(props) {
@@ -30,7 +23,6 @@ export default class App extends React.Component {
   }
   async componentDidMount() {
     const acc = await reach.getDefaultAccount();
-    // const acc = await reach.newTestAccount(balance)
     const balAtomic = await reach.balanceOf(acc);
     const bal = reach.formatCurrency(balAtomic, 4);
     this.setState({acc, bal});
